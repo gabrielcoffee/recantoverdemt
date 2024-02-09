@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Recanto Verde</title>
+  </head>
+
+  <body class="bg-mybege-0">
+
+    <!-- WEBSITE NAVBAR -->
+    <nav class="bg-mybege-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex md:block justify-between items-center h-16">
+          <div class="flex justify-between items-center mt-5 md:mt-2">
+            <a href="#" class="flex-shrink-0">
+            <img src="images/logo.svg" class="h-14 sm:h-20" alt="Logo Recanto Verde">
+            </a>
+            <div class="hidden md:block">
+              <div class="flex items-baseline space-x-4 text-mygreen-0 font-nunito font-semibold">
+                <a href="#" class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Home</a>
+                <a href="#" class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Galeria</a>
+                <a href="#" class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Catálogos</a>
+                <a href="#" class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Sobre Nós</a>
+                <a href="#" class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Contato</a>
+              </div>
+            </div>
+          </div>
+          <div class="mr-2 flex md:hidden mt-2">
+            <button id="menuButton" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-mygreenlight-0 hover:text-white hover:bg-black hover:bg-opacity-5 transition duration-150 ease-in-out" aria-label="Menu" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" class="h-12 w-12 mt-2 fill-mygreen-0">
+                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE NAVBAR -->
+      <div id="menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3 text-mygreen-0 font-nunito font-semibold">
+          <a href="#" class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Home</a>
+          <a href="#" class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Galeria</a>
+          <a href="#" class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Catálogos</a>
+          <a href="#" class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Sobre Nós</a>
+          <a href="#" class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Contato</a>
+        </div>
+      </div>
+
+      <!-- LINE -->
+      <hr class="w-5/6 2xl:w-2/3 mt-6 h-0.5 mx-auto
+        border-0 rounded
+        bg-mygreen-0">
+    </nav>
+
+    <!-- MOBILE NAVBAR BUTTON SCRIPT-->
+    <script>
+      const btn = document.getElementById('menuButton');
+      const menu = document.getElementById('menu');
+      // Adicionar um event listener
+      btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+      })
+    </script>
+
+    <!-- PARTE BEJE  -->
+    <div class="mt-16 relative">
+      <image src="images/borboletabg.svg" class="w-5/6 absolute -left-10 -top-12 -z-10"></image>
+      
+
+      <div class="flex justify-center">
+          <h1 class="text-6xl font-questrial bg-clip-text text-transparent 
+          bg-gradient-to-r from-mygreen-0 to-mygreenlight-0 text-left">Transforme <br>Seu Lar</h1>
+      </div>
+
+      <div class="mt-8 flex justify-center">
+        <p class="text-lg font-questrial text-mygreen-0 mx-6 text-left">
+          Transformamos ambientes e
+          cultivamos beleza, do jardim à sua sala.<br>
+          Explore a harmonia entre <strong> móveis, decorações
+          e flores </strong>que renovam o seu espaço.
+        </p>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="#" class="shadow-md shadow-gray-500 hover:bg-mygreenlight-0 px-8 py-6 bg-mygreen-0 rounded-xl text-white font-nunito text-lg font-extrabold">
+            Conhecer Produtos
+        </a>
+      </div>
+
+      <div class="mt-20 pb-5 flex overflow-auto">
+          <img name="images1" class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/moveis1.png" alt="Moveis Recanto Verde">
+          <img name="images1" class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/moveis2.png" alt="Moveis Recanto Verde">
+          <img name="images1" class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/moveis3.png" alt="Moveis Recanto Verde">
+      </div>
+
+      <image src="images/borboletasbg.png" class="absolute right-0 -bottom-10 -z-10"></image>
+
+      <p class=" mt-4 text-center">
+        <a href="#" class="underline text-xl">
+          Mais imagens
+        </a>
+      </p>
+    </div>
+      
+      
+      <!-- PARTE VERDE -->
+      <div class="bg-mygreen-0 pt-8 mt-12 h-80 relative">
+        <image src="images/folhas.png" class="absolute top-0 right-0 w-52 z-10"></image>
+
+        <div class="flex justify-center">
+          <h1 class="z-20 mt-10 text-6xl font-questrial bg-clip-text text-transparent 
+          bg-white text-left">Paisagismo e <br>Jardinagem</h1>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <p class="text-lg font-questrial text-white mx-6 text-left">
+            Com a Recanto Verde a qualidade
+             e o toque profissional se entrelaçam
+              para criar verdadeiros <strong>oásis naturais</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-mygreen-0 pt-12 h-96 relative">
+
+        <image src="images/borboletasbg.png" class="absolute top-28 -left-10 z-10"></image>
+
+        <div class="text-center">
+          <a href="#" class="shadow-md shadow-black hover:bg-slate-200 px-8 py-6 bg-white rounded-xl text-mygreen-0 font-nunito text-lg font-extrabold">
+              Faça um orçamento 
+          </a>
+        </div>
+
+        <div class="mt-20 pb-5 flex overflow-auto">
+          <img name="plantas1" class="z-20 w-80 shadow-md mx-2 shadow-black rounded-xl border-2 border-mygold-0" src="images/plantas1.jpg" alt="Moveis Recanto Verde">
+          <img name="plantas1" class="z-20 w-80 shadow-md mx-2 shadow-black rounded-xl border-2 border-mygold-0" src="images/plantas2.jpg" alt="Moveis Recanto Verde">
+          <img name="plantas1" class="z-20 w-80 shadow-md mx-2 shadow-black rounded-xl border-2 border-mygold-0" src="images/plantas3.jpg" alt="Moveis Recanto Verde">
+        </div>
+      </div>
+      
+      <div class="bg-mygreen-0 relative pt-12 h-80 -z-30">
+        <image src="images/folhasbaixo.png" class="absolute bottom-0 right-0 w-52 -z-10"></image>
+
+        <p class="mt-48 text-center">
+          <a href="#" class="underline text-xl">
+            Mais imagens
+          </a>
+        </p>
+      </div>
+
+      <!-- PARTE BEJE BUQUES -->
+
+      <div class="mt-16">
+        <div class="flex justify-center">
+          <h1 class="text-5xl font-questrial bg-clip-text text-transparent 
+          bg-gradient-to-r from-mygreen-0 to-mygreenlight-0 text-left">Arranjos Buques<br>e Coroas</h1>
+        </div>
+
+      <div class="mt-8 flex justify-center">
+        <p class="text-lg font-questrial text-mygreen-0 mx-6 text-left">
+          Transformamos ambientes e
+          cultivamos beleza, do jardim à sua sala.<br>
+          Explore a harmonia entre <strong> móveis, decorações
+          e flores </strong>que renovam o seu espaço.
+        </p>
+      </div>
+        <div class="mt-16 pb-5 flex overflow-auto">
+          <img class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/flores1.jpg" alt="Moveis Recanto Verde">
+          <img class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/flores2.jpg" alt="Moveis Recanto Verde">
+          <img class="w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/flores3.jpg" alt="Moveis Recanto Verde">
+        </div>
+      </div>
+
+      <!-- PARTE CINZA HISTÓRIA -->
+
+      <div class="bg-mygray-0 pt-8 mt-8 h-64 relative">
+        <div class="flex justify-center">
+          <h1 class="z-20 mt-8 text-6xl font-questrial bg-clip-text text-transparent 
+          bg-white text-left">Uma história<br> de sucesso.</h1>
+        </div>
+      </div>
+
+      <div class="bg-mygray-0 h-96 relative">
+
+        <div class="pb-5 flex overflow-auto">
+          <img class="z-10 w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/2000.png" alt="Moveis Recanto Verde">
+          <img class="z-10 w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/2018.png" alt="Moveis Recanto Verde">
+          <img class="z-10 w-80 shadow-md mx-2 shadow-gray-500 rounded-xl border-2 border-mygold-0" src="images/2024.png" alt="Moveis Recanto Verde">
+        </div>
+
+        
+      </div>
+
+      <div class="bg-mygray-0 h-28 relative">
+        <div class="text-center">
+          <a href="#" class="z-20 shadow-md shadow-gray-500 px-8 py-6 bg-mybegelight-0 rounded-xl text-mygreen-0 font-nunito text-lg font-extrabold">
+              Conheça nossa história
+          </a>
+        </div>
+      </div>
+
+      <!-- Rodapé -->
+
+      <footer>
+        <p class="mt-8 text-center">
+          <div class="flex justify-center">
+            <a href="#" class="text-xl font-nunito flex text-slate-500">
+              <strong>Compre pelo Whatsapp</strong>
+              <img src="images/whatsapp-icon.svg" class="w-7 ml-2" alt="whatsapp logo">
+            </a>
+            
+          </div>
+        </p>
+        
+        <div class="mt-12">
+          <h2 class="text-2xl font-nunito text-mygreen-0 text-center font-bold">
+            SAIBA DAS NOVIDADES
+          </h2>
+          <form>
+            <div class="flex mt-4 justify-center">
+              <input class="bg-[#D9D9D9] appearance-none border-2 border-gray-200 rounded w-3/5 py-2 px-4 mx-1 text-[#787878] leading-tight focus:outline-none" id="inline-full-name" type="text" placeholder="Insira seu e-mail">
+              <a href="#" class="shadow-md shadow-gray-500 hover:bg-mygreenlight-0 px-2 py-6 bg-mygreen-0 rounded-xl text-white font-nunito font-extrabold">
+                Inscrever-se
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="mt-8 flex">
+          <img src="images/logo-rodape.svg" class="ml-8 w-1/2">
+          
+        </div>
+        
+
+      </footer>
+  </body>
+</html>
