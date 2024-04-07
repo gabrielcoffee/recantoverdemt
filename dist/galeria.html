@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Recanto Verde</title>
+    </head>
+
+    <body class="bg-mybege-0">
+        <!-- WEBSITE NAVBAR -->
+        <nav class="bg-mybege-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex md:block justify-between items-center h-16">
+                    <div class="flex justify-between items-center mt-5 md:mt-2">
+                        <a href="#" class="flex-shrink-0">
+                            <img src="images/logo.svg" class="h-14 sm:h-20" alt="Logo Recanto Verde">
+                        </a>
+                        <div class="hidden md:block">
+                            <div class="flex items-baseline space-x-4 text-mygreen-0 font-nunito font-semibold">
+                                <a href="index.html"
+                                    class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Home</a>
+                                <a href="galeria.html"
+                                    class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Galeria</a>
+                                <a href="catalogos.html"
+                                    class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Catálogos</a>
+                                <a href="sobre.html"
+                                    class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Sobre
+                                    Nós</a>
+                                <a href="contato.html"
+                                    class="px-3 py-2 hover:bg-black hover:bg-opacity-5 rounded transition duration-150 ease-in-out">Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr-2 flex md:hidden mt-2">
+                        <button id="menuButton" type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-mygreenlight-0 hover:text-white hover:bg-black hover:bg-opacity-5 transition duration-150 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 50 50" class="h-12 w-12 mt-2 fill-mygreen-0">
+                                <path
+                                    d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE NAVBAR -->
+            <div id="menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 sm:px-3 text-mygreen-0 font-nunito font-semibold">
+                    <a href="index.html"
+                        class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Home</a>
+                    <a href="galeria.html"
+                        class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Galeria</a>
+                    <a href="catalogos.html"
+                        class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Catálogos</a>
+                    <a href="sobre.html"
+                        class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Sobre
+                        Nós</a>
+                    <a href="contato.html"
+                        class="px-3 py-3 block hover:bg-black hover:bg-opacity-5 rounded-md transition duration-150 ease-in-out">Contato</a>
+                </div>
+            </div>
+
+            <!-- LINE -->
+            <hr class="w-5/6 2xl:w-2/3 mt-6 h-1 mx-auto
+                border-0 rounded
+                bg-mygreen-0">
+        </nav>
+
+        <!-- MOBILE NAVBAR BUTTON SCRIPT-->
+        <script>
+            const btn = document.getElementById('menuButton');
+            const menu = document.getElementById('menu');
+            // Adicionar um event listener
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            })
+        </script>
+
+        <!-- GALERIA COM OPÇÕES DE CATEGORIAS -->
+        <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+            <button type="button"
+                class="text-white bg-mygreenlight-0 focus:ring-4 focus:bg-mygreen-0 focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">
+                Mostrar Tudo
+            </button>
+            <button type="button"
+                class="text-white bg-mygreenlight-0 focus:ring-4 focus:bg-mygreen-0 focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">
+                Móveis
+            </button>
+            <button type="button"
+                class="text-white bg-mygreenlight-0 focus:ring-4 focus:bg-mygreen-0 focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">
+                Decorações
+            </button>
+            <button type="button"
+                class="text-white bg-mygreenlight-0 focus:ring-4 focus:bg-mygreen-0 focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">
+                Botânicos
+            </button>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg image" 
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg image"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="hidden">
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="" class="w-full">
+            </div>
+        </div>
+        <script>
+            // get all images
+            // set event click
+            // set modal to show image
+
+            let images = document.getElementsByClass("image");
+
+            function hideElement(elementId) {
+                element = document.getElementById(elementId);
+                if (element) {
+                    element.classList.add('hidden');
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>
